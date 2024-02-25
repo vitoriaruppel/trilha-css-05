@@ -1,0 +1,108 @@
+@import url(/assets/css/style.css);
+@import url(/assets/css/styleScreen.css);
+
+body{
+    background-image: url("../images/background-movies-series.png");
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+main{
+    display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-family: "Quicksand", cursive;
+  width:auto;
+  height: 70%;
+  padding: 24px;
+  margin: 85px 0 0 0;
+}
+
+.container_form{
+    width: 100%;
+  max-width: 800px;
+  background-color: var(--form-bg-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+}
+
+.container h3{
+    letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+    text-align: center;
+}
+
+.container h4{
+    font-weight: 500;
+}
+
+form{
+    display: grid;
+    gap: 24px;
+}
+
+.login_field{
+    background: var(--form-field-bg-color);
+  border: var(--form-field-border);
+  border-radius: 8px;
+  color: var(--text-color);
+  padding: 16px;
+  font-size: 1rem;
+}
+
+.login_field::placeholder {
+    color: var(--form-field-placeholder);
+}
+
+.login_field:invalid {
+    border-color: var(--form-field-error);
+}
+
+.form_actions{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    text-align: left;
+    align-items: center;
+}
+
+.form_actions button{
+    background: var(--btn-bg-color-gradient);
+    color: var(--text-color);
+    padding: 16px 40px;
+    border-radius: 500px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color);
+    letter-spacing: 4px;
+    border: none;
+    outline: 3px solid transparent;
+    background-size: 250%;
+    margin: 20px 24px 0 0;
+    transition: background 1s, color 1s;
+  }
+  
+  .form_actions button:hover{
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+.login_link{
+    color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer{
+    margin-top: -100px;
+}
